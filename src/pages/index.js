@@ -1,49 +1,51 @@
 import React from "react"
 import { Link } from 'gatsby'
 
-
+import Layout from './components/layout'
 
 import styled  from 'styled-components'
 
 
 export default function Home() {
   return (
-    <section>
-      <Container>
-          <HeadingButton>
-            <h2>Design Develop & Deploy</h2>
-            <Link to='/about'><button>About Me</button></Link>
-          </HeadingButton>
+    <Layout>
+      <section>
+        <Container>
+            <HeadingButton>
+              <h2>Design Develop & Deploy</h2>
+              <Link to='/about'><button>About Me</button></Link>
+            </HeadingButton>
+            
+            <h3>UX Designer & Web Developer based in Drama/Greece</h3>
+        </Container>
+
+        <Container2>
+          <h3>Case Studies</h3>
           
-          <h3>UX Designer & Web Developer based in Drama/Greece</h3>
-      </Container>
+            <CaseStudies>
+            <Link  to="/projects/websites"> 
+              <CaseStudiesBlock>
+                <h4>Web Sites</h4>
+                <p>Some of my projects</p>
+              </CaseStudiesBlock>
+            </Link>
 
-      <Container2>
-        <h3>Case Studies</h3>
+              <CaseStudiesBlock>
+                <h4>UI</h4>
+                <p>Some of my projects</p>
+              </CaseStudiesBlock>
+
+              <CaseStudiesBlock>
+                <h4>UX</h4>
+                <p>Some of my projects</p>
+              </CaseStudiesBlock>
+            </CaseStudies>
+          
+        </Container2>
         
-          <CaseStudies>
-          <Link  to="/projects/websites"> 
-            <CaseStudiesBlock>
-              <h4>Web Sites</h4>
-              <p>Some of my projects</p>
-            </CaseStudiesBlock>
-          </Link>
 
-            <CaseStudiesBlock>
-              <h4>UI</h4>
-              <p>Some of my projects</p>
-            </CaseStudiesBlock>
-
-            <CaseStudiesBlock>
-              <h4>UX</h4>
-              <p>Some of my projects</p>
-            </CaseStudiesBlock>
-          </CaseStudies>
-        
-      </Container2>
-      
-
-    </section>
+      </section>
+    </Layout>
   )
 }
 
@@ -103,7 +105,7 @@ const Container2 = styled.div`
   max-width:900px;
   min-height:50vh;
   margin:0 auto;
-  margin-top:8rem;
+  margin-top:1rem;
   
   h3 {
     font-family:"Poppins";
