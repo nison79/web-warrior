@@ -9,7 +9,7 @@ import styled  from 'styled-components'
 export default function Home() {
   return (
     <Layout>
-      <section>
+      
         <Container>
             <HeadingButton>
               <h2>Design Develop & Deploy</h2>
@@ -44,7 +44,6 @@ export default function Home() {
         </Container2>
         
 
-      </section>
     </Layout>
   )
 }
@@ -54,7 +53,7 @@ const Container = styled.div`
   display:flex;
   align-items:center;
   
-  max-width:1200px;
+  max-width:1000px;
   min-height:50vh;
   margin:0 auto;
 
@@ -62,13 +61,13 @@ const Container = styled.div`
     font-family:"Poppins";
     font-weight:900;
     font-size:5rem;
-    margin:0;
+    margin-right:8rem;
     line-height:5rem;
   }
   h3 {
     font-family:"Poppins";
-    font-weight:500;
-    font-size:3rem;
+    font-weight:400;
+    font-size:2.5rem;
     margin:0;
     line-height:3rem;
   }
@@ -94,7 +93,7 @@ const HeadingButton = styled.div`
     background:black;
     color:white;
     padding:1rem 2rem;
-    margin-top:3rem;
+    margin-top:0rem;
   }
 `
 

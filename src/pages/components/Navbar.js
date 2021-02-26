@@ -16,7 +16,7 @@ export default function NavBar() {
 }
 
 const Nav = styled.nav`
-margin-bottom:5rem;
+margin-bottom:0rem;
   display:flex;
   align-items:center;
   justify-content:space-between;
